@@ -1,4 +1,5 @@
-# Reciprocity in Directed Hypergraph
+# Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators
 
-Checking whether it is being updated. 22.06.11. 09:00  
-Checking whether it is being updated. 22.06.11. 15:00
+We provide source code for 
+
+(1) Calculating \textbf{}
