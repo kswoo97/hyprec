@@ -318,9 +318,6 @@ def measure_reciprocity(head_index, tail_index, data_type = 'normal_sparse',
                 if is_pass :
                     continue
 
-                if len(candids_list) > 27 :
-                    print("Omega is greater than 25. Intractable")
-
                 max_recip = efficient_distance_matching(e = e,
                                                 candidates = candids_list,
                                                 head_index = head_index,
@@ -394,9 +391,6 @@ def measure_reciprocity(head_index, tail_index, data_type = 'normal_sparse',
 
                 if is_pass :
                     continue
-                
-                if len(candids_list) > 25 :
-                    print("Omega is greater than 25. Intractable")
 
                 max_recip = efficient_distance_matching(e = e,
                                             candidates = candids_list,
@@ -474,10 +468,6 @@ def measure_reciprocity(head_index, tail_index, data_type = 'normal_sparse',
 
                 if is_pass :
                     continue
-                
-                if ((len(candids_list) > 25) & (special_case != "FDHG")) :
-
-                    print("Omega is greater than 25. Intractable")
                 
                 max_recip = efficient_distance_matching(e = e,
                                             candidates = candids_list, 
@@ -708,12 +698,12 @@ def bitcoin_dataset_reciprocity_computation(head_index, tail_index, alpha) : #
 
     for i in (range(interval.shape[0] - 1)):
 
-        print("{0}/{1} is on process".format(i + 1, interval.shape[0] - 1))
+        print("Preprocessing {0}/{1} is on process".format(i + 1, interval.shape[0] - 1))
         E1 = S.T[int(interval[i]): int(interval[i + 1])].dot(T)
         E2 = T.T[int(interval[i]): int(interval[i + 1])].dot(S)
         E1, E2 = E1.multiply(E2).nonzero()
 
-        for e1, e2 in tqdm(zip(E1, E2)):
+        for e1, e2 in (zip(E1, E2)):
             if e1 != e2:
                 omega[int(e1 + i * 200000)].extend([e2])
 
@@ -733,6 +723,8 @@ def bitcoin_dataset_reciprocity_computation(head_index, tail_index, alpha) : #
             cur_intervals = np.arange(prev_sum, end_point)
             interval_ranges[k] = cur_intervals
             prev_sum += 50000
+
+    print("Preprocessing Done. Reciprocity Computation...")
 
     for i in range(len(interval_ranges)):
         try:

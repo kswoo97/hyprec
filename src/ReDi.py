@@ -464,7 +464,7 @@ def ReDi_degreewise(head_index, tail_index, beta1, beta2, mode,
     idx = -1
     idx2 = -1
 
-    for i in tqdm(each_add_N):
+    for i in tqdm(range(each_add_N.shape[0])):
 
         if i > IND:
             IND = i
