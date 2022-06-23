@@ -35,3 +35,14 @@ We provide 11 real-world hypergraph datasets
 - bitcoin_2014
 - bitcoin_2015
 - bitcoin_2016
+
+Please download dataset and put it inside the directory with src for example
+```
+src
+  |_data 
+      |_iaf1260b
+      |_ijo1366
+      |_ ...
+   main_figure.py
+   ...
+```
