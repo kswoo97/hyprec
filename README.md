@@ -55,8 +55,17 @@ To obtain the results of reciprocity computation and generation, you may use mai
 main_reciprocity.py [-d NAME_OF_DATASET] [-t TASK] [-a ALPHA_FOR_RECIPROCITY] [-b1 BETA1] [-b2 BETA2] [-in_n NUMBER_OF_INIT_NODES] [-gen_recip DIRECTLY_COMPUTING_RECIPROCITY_AFTER_GENERATION]
 
 optional arguments:
--d NAME_OF_DATASET, Select name of dataset
--t , 
+-d NAME_OF_DATASET, Select name of dataset. String type with the exact name of the dataset (See Datasets subsection name).
+-t TASK, Select task you want to proceed. String type with one of ["reciprocity", "redi_generation", "null_generation", "base_generation"]
+  = "reciprocity" : Computes reciprocity
+  = "redi_generation" : Generate ReDi's hypergraph (see main paper for ReDi)
+  = "null_generation" : Generate Null hypergraph (see main paper for null hypergraph)
+  = "base_generation" : Generate Baseline hypergraph (see main paper for baseline hypergraph)
+-a ALPHA, Select alpha parameter. Float type with any alpha value greater than 0. (see main paper for alpha description)
+-b1 BETA1, Select beta 1 parameter for ReDi. Float type between [0, 1]. (see main paper for beta1 description)
+-b2 BETA2, Select beta 2 parameter for ReDi. Float type between [0, 1]. (see main paper for beta2 description)
+-in_n NUMBER_OF_INIT_NODES, Select number of initial nodes parameter x, which implies (initial nodes = x times 2*max(H_{i}, T_{i}))
+-gen_recip DIRECTLY_COMPUTING_RECIPROCITY_AFTER_GENERATION, Measuring generated hypergraphs right after the generation. Boolean type 
 ```
 
 
