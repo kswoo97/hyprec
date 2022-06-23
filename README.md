@@ -1,6 +1,9 @@
 # Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators
 
-We provide source code for Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators, which has been submitted to ICDM 22.  
+We provide 
+- **online appendix file**
+- **source code**
+for ***Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators, which has been submitted to ICDM 22.***
 
 In this work, we
 - Propose a novel hypergraph reciprocity measure, ***HyperRec***.
@@ -8,7 +11,11 @@ In this work, we
 - Discover real-world hypergraph's reciprocal pattern on 11 datasets.
 - Propose an intuitive reciprocity-preserving hypergraph generator, ***ReDi***, which can captures the reciprocal patterns of real world hypergraphs.
 
-Here, we provide source codes for following process. 
+**For online appendix, refer to the pdf file named [online_appendix_ICDM22_reciprocity_in_directed_hypergraphs.pdf]**
+
+**For source codr, refer to the below descriptions.**
+
+We provide source codes for following process. 
 
 (1) Calculating proposed reciprocity ***HyperRec*** of the real-world hypergraphs.  
 (2) Generating synthetic hypergraphs by using proposed hypergraph generator ***ReDi***, or null hypergraphs & baseline hypergraphs (see main paper for detail).  
