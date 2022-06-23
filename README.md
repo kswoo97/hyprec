@@ -49,7 +49,8 @@ src
 
 ## Reproducing Reciprocity and Generation
 
-To obtain the results of reciprocity computation and generation, you may use main_reciprocity.py
+To obtain the results of reciprocity computation and generation, you may use main_reciprocity.py.  
+Results are saved in [/result] directory.
 
 ```
 main_reciprocity.py [-d NAME_OF_DATASET] [-t TASK] [-a ALPHA_FOR_RECIPROCITY] [-b1 BETA1] [-b2 BETA2] [-in_n NUMBER_OF_INIT_NODES] [-gen_recip DIRECTLY_COMPUTING_RECIPROCITY_AFTER_GENERATION]
@@ -72,5 +73,27 @@ optional arguments:
 
 To obtain the figures illustrated in the main paper and online appendix, you may use main_figure.py
 
+As several dataset takes time in generation, we provide result of each generator in [/generated] directory.
+Please download generated files and put them inside the directory of src folder. For example
 ```
+src
+  |_generated
+      |_iaf1260b
+      |_ijo1366
+      |_ ...
+   main_figure.py
+   ...
+```
+
+Description regarding running is as follows.
+Results are saved in [/figure] directory.
+
+```
+main_figure.py [-d NAME_OF_DATASET] [-t TASK] 
+optional arguments:
+-d NAME_OF_DATASET, Select name of dataset. String type with the exact name of the dataset (See Datasets subsection name).
+-t TASK, Select task you want to proceed. String type with one of ["obs2", "obs3", "obs2_gen"]
+  = "obs2" : Draw observation 2 figure of selected dataset (head-set out degree and tail-set in degree of zero & non-zero reciprocity hyperarcs)
+  = "obs3" : Draw observation 3 figure of selected dataset (head-set out degree and tail-set in degree of zero & non-zero reciprocity hyperarcs)
+  = "obs2_gen" : Draw observation 3 figure of selected dataset's generated hypergraph (ReDi).
 ```
