@@ -21,4 +21,17 @@ To get requirements ready, run the following command on your terminal:
 pip install -r requirements.txt
 ```
 
+## Datasets
 
+We provide 11 real-world hypergraph datasets
+- metabolic_iaf1260b
+- metabolic_ijo1366
+- email_enron
+- email_eu
+- citation_dm
+- citation_software
+- qna_math
+- qna_server
+- bitcoin_2014
+- bitcoin_2015
+- bitcoin_2016
