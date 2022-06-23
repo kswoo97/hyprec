@@ -53,4 +53,10 @@ To obtain the results of reciprocity computation and generation, you may use mai
 
 ```
 main_reciprocity.py [-d NAME_OF_DATASET] [-t TASK] [-a ALPHA_FOR_RECIPROCITY] [-b1 BETA1] [-b2 BETA2] [-in_n NUMBER_OF_INIT_NODES] [-gen_recip DIRECTLY_COMPUTING_RECIPROCITY_AFTER_GENERATION]
+
+optional arguments:
+-d NAME_OF_DATASET, Select name of dataset
+-t , 
 ```
+
+
