@@ -11,9 +11,9 @@ In this work, we
 - Discover real-world hypergraph's reciprocal pattern on 11 datasets.
 - Propose an intuitive reciprocity-preserving hypergraph generator, ***ReDi***, which can captures the reciprocal patterns of real world hypergraphs.
 
-**For online appendix, refer to the pdf file named [online_appendix_ICDM22_reciprocity_in_directed_hypergraphs.pdf]**
+***For online appendix, refer to the pdf file named [online_appendix_ICDM22_reciprocity_in_directed_hypergraphs.pdf]***
 
-**For source codr, refer to the below descriptions.**
+***For source codr, refer to the below descriptions.***
 
 We provide source codes for following process. 
 
