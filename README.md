@@ -17,8 +17,8 @@ Here, we provide source does for entire process.
 ## Requirements
 
 To get requirements ready, run the following command on your terminal:
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 
