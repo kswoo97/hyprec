@@ -47,7 +47,7 @@ src
    ...
 ```
 
-## Reproduction of Reciprocity and Generation
+## Reproducing Reciprocity and Generation
 
 To obtain the results of reciprocity computation and generation, you may use main_reciprocity.py
 
@@ -68,4 +68,9 @@ optional arguments:
 -gen_recip DIRECTLY_COMPUTING_RECIPROCITY_AFTER_GENERATION, Measuring generated hypergraphs right after the generation. Boolean type 
 ```
 
+## Reproducing Figures
 
+To obtain the figures illustrated in the main paper and online appendix, you may use main_figure.py
+
+```
+```
