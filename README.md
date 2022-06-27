@@ -56,8 +56,8 @@ src
 
 ## Reproducing Reciprocity and Generation
 
-To obtain the results of reciprocity computation and generation, you may use main_reciprocity.py.  
-Results are saved in [/result] directory.
+To obtain results of reciprocity computation and generation, you may use main_reciprocity.py.  
+Results will be saved in [/result] directory.
 
 ```
 main_reciprocity.py [-d NAME_OF_DATASET] [-t TASK] [-a ALPHA_FOR_RECIPROCITY] [-b1 BETA1] [-b2 BETA2] [-in_n NUMBER_OF_INIT_NODES] [-gen_recip DIRECTLY_COMPUTING_RECIPROCITY_AFTER_GENERATION]
@@ -78,7 +78,7 @@ optional arguments:
 
 ## Reproducing Figures
 
-To obtain the figures illustrated in the main paper and online appendix, you may use main_figure.py
+To obtain figures illustrated in the main paper and online appendix, you may use main_figure.py
 
 As several dataset takes time in generation, we provide result of each generator in [/generated] directory.
 Please download generated files and put them inside the directory of src folder. For example
@@ -93,7 +93,7 @@ src
 ```
 
 Description regarding running is as follows.
-Results are saved in [/figure] directory.
+Results sill be saved in [/figure] directory.
 
 ```
 main_figure.py [-d NAME_OF_DATASET] [-t TASK] 
