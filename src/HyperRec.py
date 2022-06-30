@@ -271,8 +271,8 @@ def measure_reciprocity(head_index, tail_index, data_type = 'normal_sparse',
                 continue
             
             else:
-                true_headset = head_index[e]  # Headset을 우선 구해줌 |Hi|
-                true_tailset = tail_index[e]  # Tailset을 이어서 구해줌 |Ti|
+                true_headset = head_index[e]  # Headset |Hi|
+                true_tailset = tail_index[e]  # Tailset |Ti|
 
                 head_idx = {j: i for i, j in enumerate(true_headset)}
                 tail_idx = {j: i for i, j in enumerate(true_tailset)}
@@ -345,8 +345,8 @@ def measure_reciprocity(head_index, tail_index, data_type = 'normal_sparse',
             
             else:
                 
-                true_headset = head_index[e]  # Headset을 우선 구해줌 |Hi|
-                true_tailset = tail_index[e]  # Tailset을 이어서 구해줌 |Ti|
+                true_headset = head_index[e]  # Headset |Hi|
+                true_tailset = tail_index[e]  # Tailset |Ti|
 
                 head_idx = {j: i for i, j in enumerate(true_headset)}
                 tail_idx = {j: i for i, j in enumerate(true_tailset)}
@@ -423,8 +423,8 @@ def measure_reciprocity(head_index, tail_index, data_type = 'normal_sparse',
                 continue
                 
             else:
-                true_headset = head_index[e]  # Headset을 우선 구해줌 |Hi|
-                true_tailset = tail_index[e]  # Tailset을 이어서 구해줌 |Ti|
+                true_headset = head_index[e]  # Headset |Hi|
+                true_tailset = tail_index[e]  # Tailset |Ti|
 
                 head_idx = {j: i for i, j in enumerate(true_headset)}
                 tail_idx = {j: i for i, j in enumerate(true_tailset)}
@@ -509,8 +509,8 @@ def return_search_space(S, T, head_index, tail_index, data_type='normal_sparse',
 
             else:
 
-                true_headset = head_index[e]  # Headset을 우선 구해줌 |Hi|
-                true_tailset = tail_index[e]  # Tailset을 이어서 구해줌 |Ti|
+                true_headset = head_index[e]  # Headset |Hi|
+                true_tailset = tail_index[e]  # Tailset |Ti|
 
                 head_idx = {j: i for i, j in enumerate(true_headset)}
                 tail_idx = {j: i for i, j in enumerate(true_tailset)}
@@ -565,8 +565,8 @@ def return_search_space(S, T, head_index, tail_index, data_type='normal_sparse',
 
             else:
 
-                true_headset = head_index[e]  # Headset을 우선 구해줌 |Hi|
-                true_tailset = tail_index[e]  # Tailset을 이어서 구해줌 |Ti|
+                true_headset = head_index[e]  # Headset |Hi|
+                true_tailset = tail_index[e]  # Tailset |Ti|
 
                 head_idx = {j: i for i, j in enumerate(true_headset)}
                 tail_idx = {j: i for i, j in enumerate(true_tailset)}
@@ -620,8 +620,8 @@ def return_search_space(S, T, head_index, tail_index, data_type='normal_sparse',
                 return_candids.append([0])
 
             else:
-                true_headset = head_index[e]  # Headset을 우선 구해줌 |Hi|
-                true_tailset = tail_index[e]  # Tailset을 이어서 구해줌 |Ti|
+                true_headset = head_index[e]  # Headset |Hi|
+                true_tailset = tail_index[e]  # Tailset |Ti|
 
                 head_idx = {j: i for i, j in enumerate(true_headset)}
                 tail_idx = {j: i for i, j in enumerate(true_tailset)}
