@@ -3,7 +3,8 @@
 We provide 
 - **online appendix file**
 - **source code**
-for ***Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators, which has been submitted to ICDM 22.***
+for 
+***Sunwoo Kim, Minyoung Choe, Jaemin Yoo, and Kijung Shin. Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators. IEEE ICDM 22.***
 
 In this work, we
 - Propose a novel hypergraph reciprocity measure, ***HyperRec***.
